@@ -1,7 +1,7 @@
 # expert-doodle
 A premium desktop Expense &amp; Income Tracker built with Python &amp; CustomTkinter. Features live currency rates, multi-account management, smart financial insights, 50/30/20 budget analysis, and automated recurring bills.
 
-# 💰 Premium Expense & Income Tracker
+# 💰 Premium Finance Tracker
 
 A sleek, feature-rich, and high-performance Desktop Personal Finance Management Application. Built with **Python**, **CustomTkinter**, and **SQLite3**, this application empowers users to manage their cash flow, track multiple accounts, analyze budgets via standard financial rules, and automate subscription tracking with a modern, production-grade User Interface.
 
