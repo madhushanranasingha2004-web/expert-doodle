@@ -3,6 +3,8 @@ A premium desktop Expense &amp; Income Tracker built with Python &amp; CustomTki
 
 # 💰 Premium Finance Tracker
 
+<img width="512" height="512" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
+
 A sleek, feature-rich, and high-performance Desktop Personal Finance Management Application. Built with **Python**, **CustomTkinter**, and **SQLite3**, this application empowers users to manage their cash flow, track multiple accounts, analyze budgets via standard financial rules, and automate subscription tracking with a modern, production-grade User Interface.
 
 ---
