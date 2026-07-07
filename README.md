@@ -1,6 +1,3 @@
-# expert-doodle
-A premium desktop Expense &amp; Income Tracker built with Python &amp; CustomTkinter. Features live currency rates, multi-account management, smart financial insights, 50/30/20 budget analysis, and automated recurring bills.
-
 # 💰 Premium Finance Tracker
 
 <img width="200" height="200" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
