@@ -1,6 +1,6 @@
 # 💰 Premium Finance Tracker
 
-<img width="200" height="200" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
+  <img width="200" height="200" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
 
 A modern, high-performance Desktop Personal Finance Management Application built with **Python**, **CustomTkinter**, and **SQLite3**. Track cash flow, manage multiple accounts, automate subscriptions, and analyze budgets dynamically.
 
