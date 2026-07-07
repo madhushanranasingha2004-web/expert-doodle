@@ -32,6 +32,8 @@ The application relies on a local, lightweight, yet robust relational database m
     *   Fields: `id` (PK), `date`, `type` (Income/Expense), `category`, `amount`, `note`, `account` (Cash/Bank/Card), `user_id` (FK).
 3.  **`recurring_bills`:** Houses automation templates for subscriptions.
     *   Fields: `id` (PK), `name`, `amount`, `category`, `account`, `due_date`, `user_id` (FK).
+    *   <img width="1920" height="1020" alt="2026-07-07 (14)" src="https://github.com/user-attachments/assets/77d5eb72-db69-4049-baf0-098036aaf6d8" />
+
 
 ### Key Backend Mechanisms:
 *   **Auto-Migration Engine:** Built-in schema verification that automatically alters older database versions without losing user data (e.g., automated execution of `ALTER TABLE` for backwards compatibility).
