@@ -3,90 +3,80 @@ A premium desktop Expense &amp; Income Tracker built with Python &amp; CustomTki
 
 # 💰 Premium Finance Tracker
 
-<img width="350" height="350" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
+<img width="200" height="200" alt="money" src="https://github.com/user-attachments/assets/e5661a53-9cec-482a-83bc-462879044eb0" />
 
-A sleek, feature-rich, and high-performance Desktop Personal Finance Management Application. Built with **Python**, **CustomTkinter**, and **SQLite3**, this application empowers users to manage their cash flow, track multiple accounts, analyze budgets via standard financial rules, and automate subscription tracking with a modern, production-grade User Interface.
-
----
-
-## 🎨 UI/UX Architecture (The UI Side)
-
-The visual interface is crafted to deliver a premium, fluid, and modern desktop experience, moving away from legacy Tkinter styles.
-
-*   **CustomTkinter & Theme Engine:** Powered by `customtkinter` with full Dark and Light mode support. Dynamic color mapping ensures high contrast and accessibility.
-*   **Cinematic Login/Registration Experience:** Integrated with **OpenCV (cv2)** and **Pillow (PIL)** to render a smooth, looping video background on the registration screen for a modern onboarding flow.
-*   **Advanced Styling Integration:** Utilizes `pywinstyles` to inject native Windows styling tweaks, custom header integrations, and border smoothing.
-*   **Dynamic Data Visualization:** Implements **Matplotlib** with custom dark-background configurations matching the application's core aesthetic, providing real-time responsive graphs.
-*   **Clean Data Hierarchy:** Treeview elements customized via `tkinter.ttk` styles with color-coded transaction rows (differentiating income and expenses instantly).
+A modern, high-performance Desktop Personal Finance Management Application built with **Python**, **CustomTkinter**, and **SQLite3**. Track cash flow, manage multiple accounts, automate subscriptions, and analyze budgets dynamically.
 
 ---
 
-## 🗄️ Database Architecture (The Backend & Storage)
-
-The application relies on a local, lightweight, yet robust relational database model managed via **SQLite3**.
-
-### Table Schemas:
-1.  **`users`:** Manages secure authentication control.
-    *   Fields: `id` (PK), `username` (Unique), `password`.
-2.  **`transactions`:** Records every financial flow mapped to specific users and financial buckets.
-    *   Fields: `id` (PK), `date`, `type` (Income/Expense), `category`, `amount`, `note`, `account` (Cash/Bank/Card), `user_id` (FK).
-3.  **`recurring_bills`:** Houses automation templates for subscriptions.
-    *   Fields: `id` (PK), `name`, `amount`, `category`, `account`, `due_date`, `user_id` (FK).
-    *   <img width="1920" height="1020" alt="2026-07-07 (14)" src="https://github.com/user-attachments/assets/77d5eb72-db69-4049-baf0-098036aaf6d8" />
-
-
-### Key Backend Mechanisms:
-*   **Auto-Migration Engine:** Built-in schema verification that automatically alters older database versions without losing user data (e.g., automated execution of `ALTER TABLE` for backwards compatibility).
-*   **Data Isolation:** Multi-user support with strict Foreign Key constraints ensuring users only visualize and modify their own financial logs.
+## 🚀 Core Features
+* **Multi-Account Tracking:** Manage Cash, Bank, and Credit Card balances in real-time.
+* **50/30/20 Budgeting:** Interactive Matplotlib charts comparing spending against financial rules.
+* **Automated Bill Manager:** Smart reminders for recurring bills (subscriptions) with auto-logging.
+* **Live Currency Exchange:** Live rates integration ($ , €, £, ₹, ¥, Rs.) via online API.
+* **Smart Insights:** Algorithmic recommendation engine triggering expense warnings and tips.
+* **Data Portability:** Quick CSV Import/Export for statements and transaction logs.
 
 ---
 
-## 🚀 Core Features & Advanced Capabilities
+## 📸 Application Interface & UI Frames
+*(Place your screen captures under each respective section below)*
 
-### 1. Multi-Account Balance Tracking
-Dynamically distributes and calculates balances across three primary financial channels:
-*   💵 Cash Wallet
-*   🏦 Bank Account
-*   💳 Credit Card
-Any transaction added instantly updates the respective account's liquid capital display.
+### 🔐 1. Authentication Suite
+* **Login Frame:** Secure access portal with credential verification, "Remember Me", and password toggle.
+  <img width="1920" height="1020" alt="2026-07-07 (10)" src="https://github.com/user-attachments/assets/11bcf5d3-66b8-44e0-95e1-e9fe9cbf0094" />
 
-### 2. Live Currency Exchange Integration
-Integrated with an online Exchange Rate API (`https://open.er-api.com`). Automatically converts and displays all data, accounts, and reports across global currencies ($ , €, £, ₹, ¥, Rs.) on the fly with a fallback to cached local rates during network timeouts.
+* **Registration Frame:** Premium onboarding layout featuring a looping background video via OpenCV.
+  <img width="1920" height="1020" alt="2026-07-07 (9)" src="https://github.com/user-attachments/assets/1d3456f3-1a46-4cf4-842c-df090082182c" />
 
-### 3. Rule-Based Smart Financial Insights
-An algorithmic recommendation engine that evaluates current monthly spending against previous periods:
-*   Detects spikes in specific categories and triggers localized warnings.
-*   Congratulates users on effective budgeting when expenses drop.
+* **Password Reset Frame:** Minimalist and secure account credential recovery pipeline.
+  <img width="1920" height="1020" alt="2026-07-07 (7)" src="https://github.com/user-attachments/assets/e44acc30-d59e-435b-9b71-57462faa7d9e" />
 
-### 4. 50/30/20 Budgeting Analytics
-Uses standard microeconomic principles to divide user income into **Needs (50%)**, **Wants (30%)**, and **Savings (20%)**. Matplotlib dynamically renders a comparison bar chart contrasting recommended financial distribution versus actual real-time spending.
 
-### 5. Automated Subscription & Bill Manager
-A background daemon triggers on user login to scan the database for due templates (e.g., Netflix, Internet bills):
-*   Prompts user with a smart reminder modal.
-*   Auto-logs transactions upon approval and mathematically increments the next billing date by exactly 1 calendar month.
+### 📊 2. Dashboards & Analytics
+* **Main Dashboard:** Live balance widgets, advanced CRUD transaction log, and a color-coded data grid.
+  <img width="1920" height="1020" alt="2026-07-07 (11)" src="https://github.com/user-attachments/assets/20bdf768-4254-4778-8bc1-3e7ee6ab1e06" />
 
-### 6. Data Portability (Import/Export)
-*   **Export:** Instantly flushes filtered transaction selections into standard UTF-8 encoded CSV sheets.
-*   **Import:** Parses raw external bank transaction statements directly into the system database.
+* **Monthly Summary:** Interactive Pie Charts for spending categories paired with localized trend alerts.
+  <img width="1920" height="1020" alt="2026-07-07 (12)" src="https://github.com/user-attachments/assets/ea17b15c-e86c-422a-9e48-bd2d14e732b7" />
+
+* **50/30/20 Analyzer:** Dynamic vertical bar charts separating Needs, Wants, and Savings.
+  <img width="1920" height="1020" alt="2026-07-07 (13)" src="https://github.com/user-attachments/assets/221e81d3-3a05-4355-af32-2c975b1736a6" />
+
+
+### ⚙️ 3. Automation & Controls
+* **Recurring Bills Frame:** Control center for managing fixed utilities and recurring subscription templates.
+  <img width="1920" height="1020" alt="2026-07-07 (14)" src="https://github.com/user-attachments/assets/517c1ede-995b-40e9-8245-b4bcc9ca3873" />
+
+* **Settings Panel:** Seamless Light/Dark mode toggling, currency configuration, and manual database backup.
+  <img width="1920" height="1020" alt="2026-07-07 (15)" src="https://github.com/user-attachments/assets/8b8c06a1-9d25-485f-a07a-e3dee7d33c30" />
+
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## 🛠️ Tech Stack & Architecture
 
-*   **Language:** Python 3.x
-*   **GUI Framework:** CustomTkinter, Tkinter (Ttk)
-*   **Database Engine:** SQLite3
-*   **Data Analytics/Charts:** Matplotlib, NumPy
-*   **Video & Image Processing:** OpenCV-Python (cv2), Pillow (PIL)
-*   **Styling Tweaks:** pywinstyles, ctypes
-*   **Networking/API:** urllib, json
+* **UI Framework:** `CustomTkinter` (Modern UI), `pywinstyles` (Native Windows styling).
+* **Data & Charts:** `Matplotlib`, `NumPy` (Responsive dark-themed graphs).
+* **Media Handling:** `OpenCV (cv2)`, `Pillow (PIL)` (Smooth video-based login backdrop).
+* **Backend Storage:** `SQLite3` with an **Auto-Migration Engine** for schema updates and multi-user data isolation.
+
+### Relational Database Schemas:
+* **`users`:** `id` (PK) | `username` (Unique) | `password`
+* **`transactions`:** `id` (PK) | `date` | `type` | `category` | `amount` | `note` | `account` | `user_id` (FK)
+* **`recurring_bills`:** `id` (PK) | `name` | `amount` | `category` | `account` | `due_date` | `user_id` (FK)
 
 ---
 
 ## 🔧 Installation & Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-   cd YOUR_REPO_NAME
+```bash
+# Clone the repository
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+cd YOUR_REPO_NAME
+
+# Install required packages (if applicable)
+pip install customtkinter matplotlib pywinstyles opencv-python pillow
+
+# Run the application
+python main.py
