@@ -1,42 +1,4 @@
 {
-  "app_config": {
-    "app_name": "Premium Finance Tracker",
-    "version": "1.0.1",
-    "appearance_mode": "Dark",
-    "default_color_theme": "blue",
-    "default_currency": "Rs."
-  },
-  "accounts": [
-    "Cash Wallet",
-    "Bank Account",
-    "Credit Card"
-  ],
-  "transaction_types": [
-    "Income",
-    "Expense"
-  ],
-  "default_exchange_rates": {
-    "Rs.": 1.0,
-    "$": 0.0033,
-    "€": 0.0031,
-    "£": 0.0026,
-    "₹": 0.28,
-    "¥": 0.52
-  },
-  "sample_recurring_bills_template": [
-    {
-      "name": "Netflix",
-      "amount": 3500.00,
-      "category": "Entertainment",
-      "account": "Credit Card",
-      "due_date": "2026-07-15"
-    },
-    {
-      "name": "Wifi",
-      "amount": 2500.00,
-      "category": "Utilities",
-      "account": "Bank Account",
-      "due_date": "2026-07-20"
-    }
-  ]
+  "latest_version": "1.0.1",
+  "update_url": "https://your-website.com/download-link"
 }
